@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shouston3/pgtodolist.svg?branch=pg)](https://travis-ci.org/shouston3/pgtodolist)
+
 # A todo list
 
 ### Quick start
