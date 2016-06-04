@@ -22,3 +22,9 @@ function submitTodo() {
 }
 
 document.getElementById('submitTodo').addEventListener('click', submitTodo)
+
+function getAllTodos() {
+  console.log('getting all todos')
+}
+
+getAllTodos()
