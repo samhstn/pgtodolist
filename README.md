@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/shouston3/pgtodolist.svg?branch=pg)](https://travis-ci.org/shouston3/pgtodolist)
+[![Build Status](https://travis-ci.org/shouston3/pgtodolist.svg?branch=master)](https://travis-ci.org/shouston3/pgtodolist)
 
 # A todo list
 
