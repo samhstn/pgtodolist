@@ -8,13 +8,7 @@ server.connection({ port })
 server.register([require('inert'), require('vision')], err => {
   if(err) throw err;
 
-  server.views({
-    engines: {
-      html: require('handlebars')
-    },
-    relativeTo: __dirname,
-    path: '../views'
-  });
+  server.views(require('./routes/views.js')(__dirname));
 
   server.route([
     {

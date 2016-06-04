@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="./public/style.css">
   </head>
   <body>
-    <h1>Hello World</h1>
+
+    <h1>New Todo</h1>
+
+    <div id="newTodo">
+      <span>title: </span><input id="title">
+      <span>description: </span><input id="description">
+      <span>completion date: </span><input id="completionDate">
+      <span>state: </span><input id="state">
+      <button id="submitTodo">submit</button>
+    </div>
+
+    <h1>Todos</h1>
+
+    <div id="todoContainer"></div>
+
     <script src="../public/script.js"></script>
+
   </body>
 </html>
