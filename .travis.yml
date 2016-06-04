@@ -1,4 +1,19 @@
+sudo: false
 language: node_js
 node_js:
-  - "5.11"
+  - "4"
+  - "5"
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database postgres;' -U postgres && psql -c '\c postgres and create table todos (title varchar(255), description varchar(255), completionDate varchar(255), state varchar(255));' -U postgres
 script: node test/runner.js
+env:
+  - CXX=g++-4.8
+addons:
+  aps:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+  postgres: "9.4"
