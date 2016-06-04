@@ -15,6 +15,7 @@
     "hapi": "^13.4.1",
     "inert": "^4.0.0",
     "pg": "^4.5.6",
+    "pg-native": "^1.10.0",
     "vision": "^4.1.0"
   },
   "devDependencies": {

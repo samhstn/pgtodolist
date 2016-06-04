@@ -1,8 +1,9 @@
 const Hapi = require('hapi');
-const client = require('pg');
+const pg = require('pg').native;
+const port = process.env.PORT || 4000;
+const connectionString = "pg://samhouston: @localhost/postgres";
 
 const server = new Hapi.Server();
-const port = process.env.PORT || 4000;
 
 server.connection({ port });
 
@@ -14,7 +15,8 @@ server.register([require('inert'), require('vision')], err => {
   server.route([
     require('./routes/index.js'),
     require('./routes/params.js'),
-    require('./routes/submitNewTodo.js')
+    require('./routes/submitNewTodo.js')(pg, connectionString),
+    require('./routes/deleteAllTodos.js')(pg, connectionString)
   ]);
 });
 
