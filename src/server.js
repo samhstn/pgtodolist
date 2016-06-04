@@ -1,4 +1,5 @@
 const Hapi = require('hapi');
+const client = require('pg');
 
 const server = new Hapi.Server();
 const port = process.env.PORT || 4000;
