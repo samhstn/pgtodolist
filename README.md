@@ -4,8 +4,6 @@
 
 To get started:
 
-Set up postgres:
-
 Ensure you have node and postgres installed then,
 
 Start your postgres server: `postgres -D /usr/local/var/postgres`
